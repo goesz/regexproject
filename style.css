@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -37,18 +37,22 @@ body {
 }
 
 .input-field {
+  margin: auto;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: auto;
   color: #FAFAFA;
-  width: 116%;
-  padding: 10px;
+  width: 300px;
+  padding: 15px;
   font-size: 16px;
   border: none;
-  border-bottom: 1.5px solid #CDCDCD;
+  border-bottom: 2px solid #CDCDCD;
   outline: none;
   background-color: transparent;
 }
 
 button {
-  width: 120px;
+  width: 300px;
   height: 30px;
   cursor: pointer;
   color: #000;
@@ -58,8 +62,9 @@ button {
   border-radius: 7px;
   border: none;
   position: absolute;
-  left: 130px;
-  top: 0px;
+  margin-left: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  #EBF5EE 17.8%, #CDCDCD 100.2% );
   transition: 0.1s;
 }
@@ -89,12 +94,22 @@ button:active {
 	}
 }
 
+svg {
+  position: absolute;
+  margin-top: -210px;
+  margin-left: 280px;
+  cursor: pointer;
+  fill: #FAFAFA;
+}
 .show {
+  display: none;
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  #EBF5EE 17.8%, #CDCDCD 100.2% );
   border: none;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  margin: auto;
+  margin-left: -90px;
+  margin-top: auto;
+  margin-bottom: auto;
   color: #000;
   font-size: 12px;
   font-weight: 600;  
@@ -125,27 +140,46 @@ button:active {
 }
 
 .botoes {
-    filter: blur(3px);
-    z-index: -1;
-    position: absolute;
+    filter: blur(0px);
+    width: 500px;
+    height: 250px;
     display: flex;
-    left: 240px;
-    top: 330px;
-    outline: 1px solid #CDCDCD;
-    box-shadow: 2px 5px 10px black;
-    opacity: 60%;
-    width: 350px;
-    height: 200px;
-    background-image: linear-gradient(
-   45deg, #221133 , #3D0E1D);
-    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .but {
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 460px;
-  padding: 20px;
+  display: flex;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+.input {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  margin: auto;
+  margin-bottom: 100px;
+
+}
+
+.box2 {
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(
+   45deg, #221133 , #3D0E1D);
+    border-radius: 7px;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 60px;
+    width: 500px;
+    height: 250px;
+    filter: blur(0px);
+    outline: solid #EBF5EE;
 }

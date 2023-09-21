@@ -31,22 +31,14 @@ h3 {
   color: #E3E4DB;
 }
 
-:root {
-
-}
-
 body {
   background-image: linear-gradient(
    45deg, #3D0E1D , #221133);
 }
 
-.input-container {
-  position: relative;
-}
-
 .input-field {
   color: #FAFAFA;
-  width: 100%;
+  width: 116%;
   padding: 10px;
   font-size: 16px;
   border: none;
@@ -54,34 +46,6 @@ body {
   outline: none;
   background-color: transparent;
 }
-
-.input-label {
-  font-size: 16px;
-  color: rgba(216, 14, 14, 0);
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.input-highlight {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 0;
-  background-color: #007bff;
-  transition: all 0.3s ease;
-}
-
-.input-field:focus + .input-label {
-  top: -20px;
-  font-size: 12px;
-  color: #007bff;
-}
-
-.input-field:focus + .input-label + .input-highlight {
-  width: 100%;
-}
-
 
 button {
   width: 120px;
@@ -93,9 +57,9 @@ button {
   text-shadow: 0.2px 0.2px 4px #BFD1E5;
   border-radius: 7px;
   border: none;
-  position: relative;
-  left: 250px;
-  top: -30px;
+  position: absolute;
+  left: 130px;
+  top: 0px;
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  #EBF5EE 17.8%, #CDCDCD 100.2% );
   transition: 0.1s;
 }
@@ -128,9 +92,9 @@ button:active {
 .show {
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  #EBF5EE 17.8%, #CDCDCD 100.2% );
   border: none;
-  position: relative;
-  left: 126px;
-  top: -70px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
   color: #000;
   font-size: 12px;
   font-weight: 600;  
@@ -165,14 +129,23 @@ button:active {
     z-index: -1;
     position: absolute;
     display: flex;
-    left: 266px;
+    left: 240px;
     top: 330px;
     outline: 1px solid #CDCDCD;
     box-shadow: 2px 5px 10px black;
     opacity: 60%;
-    width: 400px;
-    height: 150px;
+    width: 350px;
+    height: 200px;
     background-image: linear-gradient(
    45deg, #221133 , #3D0E1D);
     border-radius: 7px;
+}
+
+.but {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 460px;
+  padding: 20px;
 }

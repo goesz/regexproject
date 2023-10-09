@@ -15,7 +15,7 @@ function verifyPassw(senha) {
     return false;
   }
 
-  if (!/[!@#\$%\^&\*]/.test(senha)) {
+  if (!/[@!#\$%\^&*]/.test(senha)) {
     return false;
   }
 
@@ -35,11 +35,8 @@ function verifyPassw(senha) {
     return false;
   }
 
-  if (/\d{3}/.test(senha)) {
-    return false;
-  }
 
-  if (/987|876|765|654|543|432|321/.test(senha)) {
+  if (/987|789|876|678|765|576|654|456|543|345|432|234|321|123/.test(senha)) {
     return false;
   }
 

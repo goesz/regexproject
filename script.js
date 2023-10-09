@@ -19,6 +19,10 @@ function verifyPassw(senha) {
     return false;
   }
 
+  if (!/^(?!.*([!@#$%^&*])\1\1).+$/.test(senha)) {
+    return false;
+  }
+
   if (!/[A-Z]/.test(senha)) {
     return false;
   }

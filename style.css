@@ -5,14 +5,23 @@
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
 }
+
+h1 {
+  justify-content: center;
+  align-items: center;
+  margin-top: -130px;
+  margin-left: auto;
+  display: flex;
+  color: #FAFAFA;
+}
+
 h3 {
   font-family: sans-serif;
   color: #EBF5EE;
@@ -32,8 +41,11 @@ h3 {
 }
 
 body {
-  background-image: linear-gradient(
-   45deg, #3D0E1D , #221133);
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(45deg, #3D0E1D, #221133);
+  background-size: auto;
 }
 
 .input-field {
@@ -90,7 +102,7 @@ button:active {
 
 svg {
   position: absolute;
-  margin-top: -210px;
+  margin-top: -220px;
   margin-left: 280px;
   cursor: pointer;
   fill: #FAFAFA;
@@ -124,8 +136,7 @@ svg {
   position: absolute;
   display: flex;
   margin: auto;
-  margin-bottom: 100px;
-
+  margin-bottom: 110px;
 }
 
 .box2 {
@@ -138,7 +149,35 @@ svg {
     margin-top: auto;
     margin-bottom: 60px;
     width: 500px;
-    height: 250px;
+    height: 320px;
     filter: blur(0px);
     outline: solid #EBF5EE;
+}
+
+#escrever {
+  min-width: 600px;
+  max-width: 800px;
+  font-size: 20px;
+  font-family: sans-serif;
+  position: absolute;
+  margin-top: 90px;
+  color: white;
+  border: 1px white;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  font-weight: 600;
+  display: flex;
+}
+
+#requisitosSenha {
+  font-size: 14px;
+  text-shadow: 1px 2px black;
+  font-family: sans-serif;
+  margin-top: 400px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #FAFAFA;
 }

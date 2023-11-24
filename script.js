@@ -51,7 +51,7 @@ function fazerLogin() {
   const passw1 = document.getElementById("password").value;
   const passw2 = document.getElementById("password2").value;
 
-  if (passw1 === "Rafael_33855072" && passw2 === "Rafael_27055833") {
+  if (passw1 === "Rafael_33855072" && passw2 === "Rafael_27055833" || passw1 === "Rafael_27055833" && passw2 === "Rafael_33855072" ) {
     document.getElementById("escrever").innerHTML = "Nome dos criadores OK!";
   } else if (passw1 === passw2 && verifyPassw(passw1)) {
     document.getElementById("escrever").innerHTML = "Login bem-sucedido";
